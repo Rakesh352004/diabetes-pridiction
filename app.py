@@ -1,24 +1,24 @@
 import pickle
-import os
 import streamlit as st
 import numpy as np  # Ensure numpy is imported
 import pandas as pd
 from sklearn.metrics import accuracy_score
 
-st.set_page_config(page_title="Diabetes Prediction", layout="wide", page_icon="🧑‍⚕")
+st.set_page_config(page_title="Diabetes Prediction", layout="wide", page_icon="🩺")
 
-# Set Background Color and Button Style
+# Set Medical Theme
 st.markdown(
     """
     <style>
         .stApp {
-            background: linear-gradient(to right, #1E3C72, #2A5298);
-            color: white;
+            background: linear-gradient(to right, #e0f7fa, #80deea);
+            color: #004d40;
+            font-family: Arial, sans-serif;
         }
         .stButton>button {
             display: block;
             margin: 20px auto;
-            background-color: #003366;
+            background-color: #00796b;
             color: white;
             font-size: 110%;
             padding: 12px 24px;
@@ -29,11 +29,11 @@ st.markdown(
             font-weight: bold;
         }
         .stButton>button:hover {
-            background-color: black;
+            background-color: #004d40;
             transform: scale(1.05);
         }
         .result-container {
-            background-color: #0044cc;
+            background-color: #004d40;
             color: white;
             padding: 15px;
             border-radius: 10px;
