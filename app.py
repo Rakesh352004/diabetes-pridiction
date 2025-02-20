@@ -1,4 +1,5 @@
 import pickle
+import os
 import streamlit as st
 import numpy as np  # Ensure numpy is imported
 import pandas as pd
@@ -53,7 +54,7 @@ st.markdown(
 )
 
 # Load the model
-diabetes_model_path = r"E:\disease prediction\diabetes_model.sav"
+diabetes_model_path = "diabetes_model.sav"
 try:
     with open(diabetes_model_path, 'rb') as model_file:
         diabetes_model = pickle.load(model_file)
